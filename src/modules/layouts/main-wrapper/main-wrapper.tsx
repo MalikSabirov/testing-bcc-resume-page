@@ -1,4 +1,5 @@
 import { FC, ReactNode } from "react"
+import { Header } from "../header/header"
 
 type Props = {
   children: ReactNode
@@ -7,7 +8,7 @@ type Props = {
 export const MainWrapper: FC<Props> = ({ children }) => {
   return (
     <>
-      <header>header</header>
+      <Header />
 
       <main>{children}</main>
       <footer>footer</footer>
