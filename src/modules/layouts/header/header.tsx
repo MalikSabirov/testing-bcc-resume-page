@@ -1,3 +1,4 @@
+import { ThemeToggler } from "@shared/components/theme-toggler/theme-toggler"
 import { PATHS_MAP } from "@shared/constants"
 import { NavLink } from "react-router-dom"
 
@@ -8,7 +9,7 @@ export const Header = () => {
         CV
       </NavLink>
 
-      <button>Theme switcher</button>
+      <ThemeToggler />
     </header>
   )
 }
