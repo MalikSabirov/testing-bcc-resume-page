@@ -1,4 +1,4 @@
-import { PATHS_MAP } from "@/lib/constants/paths-map"
+import { PATHS_MAP } from "@shared/constants"
 import { NavLink } from "react-router-dom"
 
 export const Header = () => {

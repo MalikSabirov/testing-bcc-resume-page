@@ -23,14 +23,11 @@
     /* Path */
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
-      "shared/*": ["src/shared/*"],
-      "entities/*": ["src/entities/*"],
-      "features/*": ["src/features/*"],
-      "widgets/*": ["src/widgets/*"],
-      "pages/*": ["src/pages/*"],
-      "processes/*": ["src/processes/*"],
-      "app/*": ["src/app/*"]
+      "@app/*": ["./src/app/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@modules/*": ["./src/modules/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@ui/*": ["./src/ui/*"]
     }
   },
   "include": ["src", "types/vite-env.d.ts"],
