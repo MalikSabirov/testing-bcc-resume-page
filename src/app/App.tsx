@@ -1,16 +1,17 @@
-import { MainWrapper } from "@modules/layouts/main-wrapper/main-wrapper";
-import { FC } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Home } from "@modules/home/home"
+import { MainWrapper } from "@modules/layouts/main-wrapper/main-wrapper"
+import { FC } from "react"
+import { Route, Routes } from "react-router-dom"
 
 const App: FC = () => {
   return (
     <MainWrapper>
       <Routes>
-        <Route index element={<h1 className="underline">home</h1>} />
+        <Route index element={<Home />} />
         <Route path="*" element={<p>oops</p>} />
       </Routes>
     </MainWrapper>
-  );
-};
+  )
+}
 
-export default App;
+export default App
