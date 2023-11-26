@@ -5,3 +5,11 @@
 body {
   font-family: monospace;
 }
+
+* {
+  outline-color: black;
+}
+
+.dark * {
+  outline-color: white;
+}
