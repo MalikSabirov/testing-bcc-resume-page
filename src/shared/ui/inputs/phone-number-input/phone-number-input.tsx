@@ -18,12 +18,18 @@ export const PhoneNumberInput: FC<Props> = ({
 
   return (
     <div className={clsx("relative", containerClassName)}>
+      {meta.touched && meta.error && (
+        <label className="absolute -top-5 right-0 text-red-600">
+          {meta.error}
+        </label>
+      )}
+
       <PrefilledNumber />
       <ReactInputMask
         id={props.id}
         className={clsx(
           "dark:text-whitex w-full rounded-md border border-gray-200 py-3 pl-11 pr-3 dark:bg-black",
-          meta.touched && meta.error && "border-red",
+          meta.touched && meta.error && "border-red-600",
           className,
         )}
         mask="(999) 999 99 99"
