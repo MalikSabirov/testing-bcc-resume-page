@@ -27,7 +27,8 @@
       "@assets/*": ["./src/assets/*"],
       "@modules/*": ["./src/modules/*"],
       "@shared/*": ["./src/shared/*"],
-      "@ui/*": ["./src/ui/*"]
+      "@ui/*": ["./src/ui/*"],
+      "@models/*": ["./src/models/*"]
     }
   },
   "include": ["src", "types/vite-env.d.ts"],
