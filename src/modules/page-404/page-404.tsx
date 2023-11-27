@@ -1,4 +1,5 @@
 import { PATHS_MAP } from "@shared/constants"
+import { MainCard } from "@shared/ui"
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router"
 
@@ -20,15 +21,18 @@ export const Page404 = () => {
   }, [time])
 
   return (
-    <div>
-      <h1>Что-то пошло нет</h1>
-      <p>
-        Если вы первый раз по прямой ссылке зашли, т.к. GitHub Pages не дает
+    <div className="mx-auto flex max-w-4xl flex-col">
+      <MainCard
+        title="Что-то пошло нет"
+        description="Если вы первый раз по прямой ссылке зашли, т.к. GitHub Pages не дает
         полный контроль над сервером, приходится вот такими костылями
-        обкладываеться
-      </p>
+        обкладываеться"
+      />
 
-      <p>Через {time} секунд будет перенаправление на главную</p>
+      <p className="mt-12 text-center text-xl">
+        Через <span className="text-red-600">{time} секунд</span> будет
+        перенаправление на главную
+      </p>
     </div>
   )
 }
