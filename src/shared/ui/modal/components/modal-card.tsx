@@ -18,7 +18,7 @@ export const ModalCard: FC<Props> = ({
         maxWidth,
       }}
       className={clsx(
-        "relative z-10 w-full rounded-lg bg-white p-8 text-black shadow-md dark:bg-black dark:text-white",
+        "relative z-10 w-full rounded-lg bg-white p-5 text-black shadow-md dark:bg-black dark:text-white md:p-8",
         className,
       )}
     >

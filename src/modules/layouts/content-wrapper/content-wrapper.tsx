@@ -9,7 +9,7 @@ type Props = WithChildren & {
 export const ContentWrapper: FC<Props> = ({ className, children }) => {
   return (
     <div
-      className={clsx("mx-auto w-full max-w-6xl px-8", className)}
+      className={clsx("mx-auto w-full max-w-6xl px-5 xl:px-8", className)}
       children={children}
     />
   )

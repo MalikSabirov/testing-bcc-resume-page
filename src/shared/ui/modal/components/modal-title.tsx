@@ -8,7 +8,12 @@ type Props = WithChildren & {
 
 export const ModalTitle: FC<Props> = ({ className, children }) => {
   return (
-    <h3 className={clsx("text-center text-3xl", className ?? "mb-7")}>
+    <h3
+      className={clsx(
+        "text-center text-2xl md:text-3xl",
+        className ?? "mb-5 md:mb-7",
+      )}
+    >
       {children}
     </h3>
   )

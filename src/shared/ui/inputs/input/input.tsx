@@ -17,7 +17,7 @@ export const Input: FC<Props> = ({
   return (
     <div className={clsx("relative", containerClassName)}>
       {meta.touched && meta.error && (
-        <label className="absolute -top-5 right-0 text-red-600">
+        <label className="absolute right-0 top-0 -translate-y-full text-xs text-red-600">
           {meta.error}
         </label>
       )}

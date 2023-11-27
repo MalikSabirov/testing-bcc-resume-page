@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-between px-10 py-5 font-mono">
+    <header className="flex items-center justify-between px-5 py-3 font-mono xl:px-8 xl:py-5">
       <NavLink to={PATHS_MAP.ROOT.get()} className="p-2 text-2xl">
         CV
       </NavLink>

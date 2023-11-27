@@ -10,12 +10,12 @@ export const EventInfo: FC<Props> = ({ date, description }) => {
   const formattedDate = format(date, "dd.MM.yyyy")
 
   return (
-    <dl className="mt-4">
+    <dl className="mt-4 grid grid-cols-[min-content_1fr] gap-x-2 gap-y-3">
       <dt>Дата</dt>
       <dd>{formattedDate}</dd>
 
       <dt>Описание</dt>
-      <dd>{description}</dd>
+      <dd className="break-all">{description}</dd>
     </dl>
   )
 }

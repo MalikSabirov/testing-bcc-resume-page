@@ -29,24 +29,20 @@ export const BookingFormModal: FC<Props> = ({
         onSubmit={handleSubmit}
       >
         {({ isValid, isSubmitting, dirty }) => (
-          <>
-            {/* {isSubmitting && <Loader />} */}
+          <Form className="space-y-5 md:space-y-7">
+            <Input name="description" placeholder="Описание" />
 
-            <Form className="space-y-7">
-              <Input name="description" placeholder="Описание" />
+            <div className="grid grid-cols-2 gap-5">
+              <Button onClick={onClose}>Отмена</Button>
 
-              <div className="grid grid-cols-2 gap-5">
-                <Button onClick={onClose}>Отмена</Button>
-
-                <Button
-                  disabled={!isValid || isSubmitting || !dirty}
-                  type="submit"
-                >
-                  Записаться
-                </Button>
-              </div>
-            </Form>
-          </>
+              <Button
+                disabled={!isValid || isSubmitting || !dirty}
+                type="submit"
+              >
+                Записаться
+              </Button>
+            </div>
+          </Form>
         )}
       </Formik>
     </Modal>

@@ -29,8 +29,8 @@ export const FeedbackForm: FC<Props> = ({ onClose }) => {
         <>
           {isSubmitting && <Loader />}
 
-          <Form className="space-y-7">
-            <fieldset className="space-y-6">
+          <Form className="space-y-5 md:space-y-7">
+            <fieldset className="space-y-5 md:space-y-6">
               <Input name="name" placeholder="Имя" />
               <PhoneNumberInput name="phone" />
               <Input name="email" placeholder="Электронная почта" />

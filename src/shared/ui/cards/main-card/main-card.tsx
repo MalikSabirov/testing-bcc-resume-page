@@ -15,10 +15,10 @@ export const MainCard: FC<Props> = ({
   className,
 }) => {
   return (
-    <div className={clsx("space-y-5 flex flex-col items-center", className)}>
+    <div className={clsx("flex flex-col items-center space-y-5", className)}>
       {icon}
-      <h1 className="text-5xl">{title}</h1>
-      <p className="text-2xl">{description}</p>
+      <h1 className="text-3xl md:text-4xl xl:text-5xl">{title}</h1>
+      <p className="text-xl md:text-2xl">{description}</p>
     </div>
   )
 }

@@ -15,10 +15,12 @@ export const IntroSection = () => {
     <>
       {isOpenFeedbackModal && <FeedbackModal onClose={closeFeedbackModal} />}
 
-      <section className="flex flex-col items-center space-y-7">
+      <section className="flex flex-col items-center space-y-5 md:space-y-7">
         <MainCard
-          icon={<BsCodeSlash className="h-32 w-32" />}
-          title=""
+          icon={
+            <BsCodeSlash className="h-16 w-16 md:h-28 md:w-28 xl:h-32 xl:w-32" />
+          }
+          title="Малик Сабиров"
           description="Frontend dev"
         />
 

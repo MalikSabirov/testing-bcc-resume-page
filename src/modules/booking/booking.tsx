@@ -8,9 +8,9 @@ export const Booking = () => {
 
   return (
     <ContentWrapper>
-      <h1 className="mb-10 text-center text-4xl">Выберите дату</h1>
+      <h1 className="mb-10 text-center text-2xl md:text-4xl">Выберите дату</h1>
 
-      <div className="mb-4 flex flex-wrap">
+      <div className="mx-auto mb-4 flex max-w-4xl flex-col items-center md:flex-row md:items-stretch md:justify-between">
         <EventView event={selectedEvent} />
         <EventCalendar setSelectedEvent={setSelectedEvent} />
       </div>
