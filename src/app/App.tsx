@@ -1,5 +1,6 @@
 import { Booking } from "@modules/booking"
 import { Home } from "@modules/home"
+import { Page404 } from "@modules/page-404/page-404"
 import { MainWrapper } from "@modules/layouts"
 import { PATHS_MAP } from "@shared/constants"
 import { FC } from "react"
@@ -11,7 +12,7 @@ const App: FC = () => {
       <Routes>
         <Route index element={<Home />} />
         <Route path={PATHS_MAP.BOOKING.get()} element={<Booking />} />
-        <Route path="*" element={<p>oops</p>} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </MainWrapper>
   )
