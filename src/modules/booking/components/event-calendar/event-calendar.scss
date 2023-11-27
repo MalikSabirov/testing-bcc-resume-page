@@ -1,4 +1,14 @@
 .calendar {
+  & .react-datepicker__month-container {
+    border-width: 1px;
+    border-color: transparent;
+  }
+
+  & .react-datepicker__header {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
   & .react-datepicker__day--outside-month {
     color: #9ca3af;
   }
@@ -9,6 +19,42 @@
 
     &:hover {
       background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+.dark {
+  & .calendar {
+    & .react-datepicker {
+      background-color: black;
+    }
+
+    & .react-datepicker__month-container {
+      border-color: white;
+    }
+
+    & .react-datepicker__header {
+      background-color: darkgray;
+    }
+
+    & .react-datepicker__current-month,
+    & .react-datepicker__day-name {
+      color: white;
+    }
+
+    & .react-datepicker__day {
+      color: white;
+
+      &:hover {
+        background-color: lightgray;
+        color: black;
+      }
+    }
+
+    & .react-datepicker__day--keyboard-selected {
+      background-color: white;
+      color: black;
+      border-color: white;
     }
   }
 }
