@@ -1,0 +1,14 @@
+.calendar {
+  & .react-datepicker__day--outside-month {
+    color: #9ca3af;
+  }
+
+  & .react-datepicker__day--keyboard-selected {
+    background-color: black;
+    color: white;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
