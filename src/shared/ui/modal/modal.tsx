@@ -42,7 +42,7 @@ export const Modal: FC<Props> = ({
   return (
     <ModalPortal
       containerClassName={clsx(containerClassName, theme)}
-      onOverlayClick={onOverlayClick}
+      onOverlayClick={onOverlayClick ?? onClose}
     >
       <ModalCard className={cardClassName} maxWidth={maxWidth}>
         {title && <ModalTitle>{title}</ModalTitle>}
