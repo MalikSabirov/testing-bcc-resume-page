@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import { useNavigate } from "react-router"
 
 export const Page404 = () => {
-  const [time, setTime] = useState(3)
+  const [time, setTime] = useState(5)
   const navigate = useNavigate()
 
   useEffect(() => {
