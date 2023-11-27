@@ -1,4 +1,4 @@
-import { ContentWrapper } from "@modules/layouts/content-wrapper/content-wrapper"
+import { ContentWrapper } from "@modules/layouts"
 import { IntroSection } from "./components"
 
 export const Home = () => {

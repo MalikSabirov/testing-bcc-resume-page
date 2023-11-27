@@ -1,6 +1,7 @@
 import { FC, ReactNode } from "react"
 import { ThemeProvider } from "@shared/context/theme-context"
-import { Footer, Header } from "./components"
+import { Header } from "../header/header"
+import { Footer } from "../footer/footer"
 
 type Props = {
   children: ReactNode
