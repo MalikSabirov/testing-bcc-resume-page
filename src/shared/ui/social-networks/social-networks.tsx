@@ -14,7 +14,7 @@ export const SocialNetworks: FC<Props> = ({ className, iconClassName }) => {
         const Icon = socialNetwork.icon
 
         return (
-          <li>
+          <li key={socialNetwork.name}>
             <Link
               target="_blank"
               title={socialNetwork.name}

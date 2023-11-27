@@ -28,7 +28,7 @@ export const PhoneNumberInput: FC<Props> = ({
       <ReactInputMask
         id={props.id}
         className={clsx(
-          "dark:text-whitex w-full rounded-md border border-gray-200 py-3 pl-11 pr-3 dark:bg-black",
+          "w-full rounded-md border border-gray-200 py-3 pl-11 pr-3 dark:bg-black dark:text-white",
           meta.touched && meta.error && "border-red-600",
           className,
         )}
