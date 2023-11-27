@@ -1,9 +1,6 @@
 import { PATHS_MAP } from "@shared/constants"
 import { FeedbackModal } from "@shared/modals"
-import { StyledLink } from "@shared/ui"
-import { Button } from "@shared/ui/button/button"
-import { MainCard } from "@shared/ui/cards/main-card/main-card"
-import { SocialNetworks } from "@shared/ui/social-networks"
+import { Button, MainCard, SocialNetworks, StyledLink } from "@shared/ui"
 import { useDisclosure } from "@shared/utils"
 import { BsCodeSlash } from "react-icons/bs"
 

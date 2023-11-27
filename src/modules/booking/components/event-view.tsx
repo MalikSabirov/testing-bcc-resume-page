@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { EventInfo } from "../event-info/event-info"
+import { EventInfo } from "./event-info"
 import { BookedEvent } from "@modules/booking/shared/types/booked-event"
 
 type Props = {

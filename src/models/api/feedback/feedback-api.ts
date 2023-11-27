@@ -1,5 +1,4 @@
-import { ErrorResponse, SuccessResponse } from "../network/network"
-import { NETWORK_STATUSES } from "../network/network-errors"
+import { ErrorResponse, NETWORK_STATUSES, SuccessResponse } from "../network"
 
 export type FeedbackAdded = {
   message: string

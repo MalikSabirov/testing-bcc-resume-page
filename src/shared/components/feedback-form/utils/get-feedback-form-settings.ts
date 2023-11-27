@@ -1,12 +1,16 @@
 import * as Yup from "yup"
-import { phoneNumberValidation } from "@shared/utils/validation-helpers"
+
 import {
   AddFeedback,
   FeedbackAdded,
   feedbackApi,
 } from "@models/api/feedback/feedback-api"
-import { NETWORK_STATUSES } from "@models/api/network/network-errors"
-import { ErrorResponse, SuccessResponse } from "@models/api/network/network"
+import {
+  ErrorResponse,
+  NETWORK_STATUSES,
+  SuccessResponse,
+} from "@models/api/network"
+import { phoneNumberValidation } from "@shared/utils"
 
 const initialValues: AddFeedback = {
   name: "",
