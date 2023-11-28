@@ -1,38 +1,20 @@
 import { PATHS_MAP } from "@shared/constants"
-import { MainCard } from "@shared/ui"
-import { useState, useEffect } from "react"
-import { useNavigate } from "react-router"
+import { MainCard, StyledLink } from "@shared/ui"
+import { useLocation } from "react-router"
 
 export const Page404 = () => {
-  const [time, setTime] = useState(5)
-  const navigate = useNavigate()
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime((prevTime) => (prevTime > 0 ? prevTime - 1 : 0))
-    }, 1000)
-
-    if (!time) {
-      clearInterval(interval)
-      navigate(PATHS_MAP.ROOT.get())
-    }
-
-    return () => clearInterval(interval)
-  }, [time])
+  const { pathname } = useLocation()
 
   return (
-    <div className="mx-auto flex max-w-4xl flex-col">
+    <div className="mx-auto flex max-w-4xl flex-col space-y-8">
       <MainCard
-        title="Что-то пошло нет"
-        description="Если вы первый раз по прямой ссылке зашли, т.к. GitHub Pages не дает
-        полный контроль над сервером, приходится вот такими костылями
-        обкладываеться"
+        title="404"
+        description={`Страницы ${pathname} не существует`}
       />
 
-      <p className="mt-12 text-center text-xl">
-        Через <span className="text-red-600">{time} секунд</span> будет
-        перенаправление на главную
-      </p>
+      <StyledLink className="mt-4 self-center" to={PATHS_MAP.ROOT.get()}>
+        Перейти на главную
+      </StyledLink>
     </div>
   )
 }
