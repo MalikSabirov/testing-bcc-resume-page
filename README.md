@@ -10,12 +10,17 @@ p.s. Если вы первый раз по прямой ссылке зашли
 
 ## Tech Stack
 
-Основа: React, TS, tailwindCSS
+Основа: React, TS, tailwindCSS, Vite
 
 Роутинг: react-router
 Для формы: Formik
 Валидация: Yup
 
 еще использовались: date-fns, react-datepicker, clsx, react-input-mask
+
+## Для развертки проекта
+
+1. `npm install`
+2. `npm run dev`
  
 
